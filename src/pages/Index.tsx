@@ -1,6 +1,32 @@
-
 import { motion } from "framer-motion";
 import { TimelineCard } from "@/components/TimelineCard";
+
+const researchQuestions = [
+  {
+    question: "Who were the Lumière brothers, and what was their contribution to cinema?",
+    answer: "The Lumière brothers, Auguste and Louis, were French inventors and pioneers in early cinema. In 1895, they developed the Cinématographe, a motion-picture camera and projector system. Their first public screening on December 28, 1895, in Paris, is traditionally regarded as the birth of cinema.",
+  },
+  {
+    question: "What is silent cinema and who were its key figures?",
+    answer: "Silent cinema refers to films produced without synchronized sound, relying on visual storytelling, exaggerated acting, and intertitles for dialogue. One of the most iconic figures of this era was Charlie Chaplin, a comedian and filmmaker known for his character 'The Tramp' and films like The Kid (1921) and City Lights (1931).",
+  },
+  {
+    question: "What was the significance of The Jazz Singer (1927)?",
+    answer: "The Jazz Singer was the first feature-length film to incorporate synchronized dialogue, marking the transition from silent films to 'talkies.' Released in 1927, it revolutionized the film industry and demonstrated the commercial potential of synchronized sound in cinema.",
+  },
+  {
+    question: "How did color influence cinema?",
+    answer: "The introduction of color in cinema added a new layer of realism and artistic expression. Early films like The Wizard of Oz (1939) and Gone with the Wind (1939) showcased Technicolor technology, enhancing storytelling and visual appeal. Over time, color became the standard, allowing filmmakers to create more immersive experiences.",
+  },
+  {
+    question: "What are three key technological advancements in film?",
+    answer: "1. Sound in film revolutionized cinema by enabling synchronized dialogue and music. 2. CGI (Computer-Generated Imagery) transformed visual effects, allowing creation of realistic fantastical scenes as seen in Jurassic Park (1993). 3. Digital filmmaking made production more efficient and accessible while providing high-definition visuals.",
+  },
+  {
+    question: "How has streaming changed cinema?",
+    answer: "Streaming platforms like Netflix, Hulu, and Disney+ have transformed how audiences consume films, making them more accessible worldwide. Traditional movie theaters face competition as more people prefer on-demand content at home. Additionally, streaming services now produce original films, blurring the line between theatrical and digital releases.",
+  },
+];
 
 const timelineData = [
   {
@@ -78,7 +104,36 @@ const Index = () => {
           </p>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-4xl mx-auto mb-24"
+        >
+          <h2 className="text-3xl font-bold mb-12 text-center">Key Research Questions</h2>
+          <div className="grid gap-8">
+            {researchQuestions.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="glass-effect p-6 rounded-lg"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-primary">
+                  {item.question}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {item.answer}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center">Timeline</h2>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-primary/50 via-primary/20 to-transparent" />
             <div className="space-y-12">
