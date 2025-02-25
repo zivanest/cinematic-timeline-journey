@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { TimelineCard } from "@/components/TimelineCard";
 
@@ -34,54 +35,63 @@ const timelineData = [
     event: "First Public Film Screening",
     description:
       "The Lumière brothers hold the first public screening of films in Paris. This event marks the birth of cinema as we know it.",
+    image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1915",
     event: "The Birth of a Nation",
     description:
       "Release of D.W. Griffith's The Birth of a Nation. Notable for its groundbreaking film techniques and controversial content; it is one of the first feature-length films.",
+    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1927",
     event: "The Jazz Singer",
     description:
       "The release of The Jazz Singer, the first feature-length 'talkie.' This film revolutionized the industry by integrating synchronized sound, leading to the decline of silent films.",
+    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1939",
     event: "The Wizard of Oz",
     description:
       "The release of The Wizard of Oz, one of the first full-color films using Technicolor. This film showcased the power of color in storytelling, making it visually stunning and beloved.",
+    image: "https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1950s",
     event: "The Rise of Television",
     description:
       "Television becomes popular, impacting movie attendance. Many film studios begin to adapt by creating new formats and genres to attract audiences back to theaters.",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1977",
     event: "Star Wars",
     description:
       "Release of Star Wars, directed by George Lucas. This film revolutionized special effects and merchandising, becoming a cultural phenomenon.",
+    image: "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "1995",
     event: "First Fully Computer-Generated Feature Film",
     description:
       "Release of Toy Story, the first entirely CGI animated film. This marked a new era in animation, paving the way for future animated films.",
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "2000s",
     event: "The Rise of Streaming Platforms",
     description:
       "The emergence of platforms like Netflix and Hulu. Streaming changes how audiences access and consume films, leading to new distribution models.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
   {
     year: "2020s",
     event: "The Impact of the Pandemic on Cinema",
     description:
       "The COVID-19 pandemic forces theaters to close, and studios release films directly to streaming services. This event accelerates the trend toward streaming and digital releases, reshaping the film industry.",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80",
   },
 ];
 

@@ -5,9 +5,10 @@ interface TimelineCardProps {
   year: string;
   event: string;
   description: string;
+  image?: string;
 }
 
-export const TimelineCard = ({ year, event, description }: TimelineCardProps) => {
+export const TimelineCard = ({ year, event, description, image }: TimelineCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,6 +17,15 @@ export const TimelineCard = ({ year, event, description }: TimelineCardProps) =>
       transition={{ duration: 0.5 }}
       className="timeline-card"
     >
+      {image && (
+        <div className="mb-4 overflow-hidden rounded-md">
+          <img 
+            src={image} 
+            alt={event}
+            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      )}
       <div className="flex flex-col gap-2">
         <span className="text-primary text-sm font-medium tracking-wider">
           {year}
